@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pulaLinha = function() {
+            document.write("<br>")
+        }
+        var mostra = function(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+
+        function sorteia(n) {
+            return Math.round(Math.random() * n)
+            
+        } 
+
+        var numeroPensado = sorteia(10)
+        var chute = prompt("Já pensei. Qual você acha que é?")
+
+        if (chute == numeroPensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado)
+        } 
+        if (chute > numeroPensado) {
+            mostra("Você errou! O número que pensei era maior do que " + chute)
+        } 
+        if (chute < numeroPensado) {
+            mostra("Você errou! O número que pensei era menor do que " + chute)
+        }
+        if (isNaN(chute)) {
+            mostra("Digite um número válido")
+        }
+    </script>
+</body>
+</html>

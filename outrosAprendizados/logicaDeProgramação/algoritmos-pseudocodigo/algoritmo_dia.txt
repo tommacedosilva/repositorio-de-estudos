@@ -1,0 +1,71 @@
+Inicio-dia
+	acordei
+	levantei da cama
+	chequei celular
+	tirei minha roupa
+	peguei a toalha
+	abri a porta
+	fui ao banheiro
+	tranquei a porta
+	liguei o chuveiro
+	tomei banho
+	fechei o chuveiro
+	peguei a toalha
+	sequei o corpo
+	escovei os dentes
+	abri a porta
+	fui pro quarto
+	fechei a porta
+	tirei a toalha
+	pendurei a toalha
+	peguei uma roupa
+	vesti a roupa
+	abri a porta
+	fui a cozinha
+	fiz meu café
+	tomei café
+	escovei os dentes
+	passei fio dental
+	fui pro quarto
+	fechei a porta
+	sentei na cadeira
+	liguei o computador
+	comecei a trabalhar
+	parei de trabalhar
+	levantei da cadeira
+	abri a porta
+	fui na cozinha
+	fiz meu almoço
+	levei o prato com comida para quarto
+	sentei na cadeira
+	comi a comida
+	termineir de comer
+	levei o prato pra cozinha
+	voltei pro quarto
+	sentei na cadeira
+	retomei o trabalho
+	parei de trabalhar
+	levantei da cadeira
+	fui na cozinha
+	fiz meu jantar
+	levei o prato com comida para quarto
+	sentei na cadeira
+	comi a comida
+	terminei de comer
+	levantei da cadeira
+	deixei o prato na cozinha
+	voltei pro quarto
+	peguei o notebook
+	deitei na cama
+	coloquei filme pra assistir no note
+	acabei o filme
+	fechei o notebook
+	guardei na mesa
+	fui ao banheiro
+	escovei os dentes
+	voltei pro quarto
+	deitei na cama
+	dormi
+Fim-dia
+	
+	

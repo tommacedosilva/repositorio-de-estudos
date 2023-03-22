@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var calculaDiasDeVida = function() {
+            var idade = prompt("Quantos anos você tem?")
+            return idade * 365
+        }
+        var calculaBatimentos = function() {
+            var batimentos = dias * 24 * 60 * 80
+            return batimentos
+        }
+        var dias = calculaDiasDeVida()
+        document.write("Você já viveu " + dias + " dias de vida" + "<br>")
+        document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!")
+    </script>
+</body>
+</html>

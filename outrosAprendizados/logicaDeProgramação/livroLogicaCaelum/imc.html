@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        var pulaLinha = function() {
+            document.write("<br>")
+        }
+        var mostra = function(frase) {
+            document.write(frase)
+            pulaLinha()
+        }
+        var calculaIMC = function(altura, peso) {
+            var imc = peso / (altura * altura)
+            return imc
+        }
+
+        var nome = prompt("Olá, como vai? Eu sou o Wall-E e você como chama?")
+        var alturaPessoa = prompt(nome + ", digite a sua altura")
+        var pesoPessoa = prompt("E agora o seu peso, " + nome)
+
+        var imcPessoa = (calculaIMC(alturaPessoa, pesoPessoa)).toFixed(2)
+        mostra(nome + " o seu imc é " + imcPessoa)
+
+        if (imcPessoa < 18.5) {
+            mostra("Seu IMC indica que você está ABAIXO do peso")
+        }
+        if (imcPessoa > 35) {
+            mostra("Seu IMC indica que você está ACIMA do peso")
+        }
+        if (imcPessoa >= 18.5 && imcPessoa <= 35) {
+            mostra("OK! Seu IMC está entre os dois limites")
+        }
+    </script>
+</body>
+</html>
