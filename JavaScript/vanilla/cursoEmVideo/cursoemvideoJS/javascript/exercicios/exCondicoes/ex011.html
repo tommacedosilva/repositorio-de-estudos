@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localidade</title>
+</head>
+<body>
+    <h1>A Localidade do cidadão</h1>
+    Qual seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="checar()">
+
+    <div id="res">
+    </div>
+
+    <script>
+        function checar() {
+            var txtp = window.document.querySelector(`input#txtpais`)
+            var res = window.document.querySelector(`div#res`)
+            var pais = txtp.value
+            res.innerHTML = `Vivendo no ${pais}`
+            if (pais == 'Brasil') {
+                res.innerHTML = `Você é brasileiro!`
+            } else {
+                res.innerHTML = `Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
