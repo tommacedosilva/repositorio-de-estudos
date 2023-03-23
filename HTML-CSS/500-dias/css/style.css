@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
+
+
+/* Cover */
+#cover {
+    background-image: url('../images/summer3.jpg');
+    background-repeat: no-repeat;
+    position: center;
+    background-size: cover, cover;
+    height: 545px;
+    border-bottom: 8px solid #599DD8;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    color: #599DD8;
+    font-size: 95px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sub-title {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+}
+
+/* Books */
+#dias {
+    font-family: 'Work Sans', cursive;
+    text-align: center;
+    font-size: 45px;
+    border-bottom: 8px solid #599DD8;
+}
+
+a {
+    color: #599DD8;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Video */
+#video {
+    background-image: url('../images/poster.jpg') no-repeat;
+    position: center;
+    size: cover;
+}
+
+.movie-clip {
+    font-family: 'Work Sans', cursive;
+    text-align: center;
+    font-size: 65px;
+}
+
+.video-clip {
+    border-bottom: 8px solid #599DD8;
+}
+
+/* Quotes */
+#quotes {
+    border-bottom: 8px solid #599DD8;
+}
+
+.quotes-title {
+    font-family: 'Work Sans', cursive;
+    text-align: center;
+    font-size: 65px;
+}
+
+.quotes-items {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+    color: #599DD8;
+}
+
+/* Footer */
+.footer {
+    background-image: url(../images/heart.png) no-repeat;
+    position: center;
+    size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.red {
+    color: #599DD8;
+    font-size: 20px;
+}

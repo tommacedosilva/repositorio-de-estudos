@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fbfbfb;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+
+}
+
+.item {
+    background: #58d5f6;
+    color: white;
+    padding: 10px;
+}
+
+.item:nth-child(even) {
+    background: #236fc8;
+}

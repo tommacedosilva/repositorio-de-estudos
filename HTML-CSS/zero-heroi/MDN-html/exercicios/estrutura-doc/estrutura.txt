@@ -1,0 +1,3 @@
+Essa avaliação testa sua capacidade de utilizar HTML para estruturar uma página simples de conteúdo, contendo um cabeçalho, um rodapé, um menu de navegação, o conteúdo principal e uma barra lateral.
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content

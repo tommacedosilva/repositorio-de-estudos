@@ -1,0 +1,242 @@
+mdn
+w3c
+w3schools
+whatwg
+
+
+========================================================================================================
+
+
+livros da o´reilly
+
+html5 - Mark Pilgrim
+
+css - Eric Meyer
+
+flexbox in css - Estelle Weyl
+
+grid layout in css - Eric Meyer
+
+
+
+html5 e css3 - Elizabeth Castro e Bruce Hyslop
+
+html & css - Jon Duckett
+
+use a cabeça, html e css - Elisabeth Robson e Eric Freeman
+
+crie seu próprio site - Nate Cooper e Kim Gee
+
+
+
+livros do maujor
+
+
+
+curso de design gráfico - David Dabner
+
+a psicologia das cores - Eva Heller
+
+pensar com tipos - Ellen Lupton 
+
+design - Bob e Maggie Gordon
+
+
+
+flexbox explained / css grid explained - Jorge Montoya e Stephen Burge
+
+
+
+veio para proteger dados centros militares
+
+=======================================================================================================================================================================
+
+0 e 1 binary digit - bit
+
+8 bits = byte: porção mínima que pode representar uma informação
+
+01000001 = A (código multibyte)
+
+UTF-8 - compatibilidade para linguagens com acento
+
+2¹º 1024 bytes     = 1 KB
+    1024 KyloBytes = 1 MB
+    1024 MegaBytes = 1 GB
+    1024 GigaBytes = 1 TB
+    1024 TeraBytes = 1 PB
+    1024 PetaBytes = 1 EB
+    1024 ExaBytes  = 1 ZB
+    1024 ZetaBytes = 1 YotaByte
+
+MB != Mb
+
+b = bits, usado em transmissão
+B = byte, usado em armazenamento
+
+=======================================================================================================================================================================
+
+TLD - top level domain
+GTLD - genéricos (.edu, .gov, .store, .io)
+CCTLD - países (br)
+
+=======================================================================================================================================================================
+
+HTML - focada em conteúdo (textos, imagens, vídeos, tabelas, aúdios)
+
+CSS - foco em design (tamanho da imagem, cores, sombras, posicionamento)
+
+JS - foco em interações (menus, animações, popups, validações)
+
+============================================
+
+Estrutura básica de documento HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+   	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+   </head>
+   <body>
+	<h1>Olá, Mundo</h1>
+   </body>
+</html>
+
+============================================
+
+Estrutura de CSS
+
+h1 {
+    font-family: Arial;
+    font-size: 20pt;
+    color: blue;
+}
+
+h1 -> seletor
+font-family: Arial; -> declaração
+color: -> propriedade
+blue; -> valor
+
+============================================
+
+front-end - client-side (HTML, CSS, JS)
+
+back-end - server-side (PHP, Node.JS, C#, Java, Python, Ruby)
+
+fullstack - com muita experiência tendo conhecimentos de front e back.
+
+============================================
+
+EXERCÍCIOS
+
+CAP 3
+
+RESPOSTAS:
+
+1 - C "Eu programo em linguagem JavaScript"
+
+2 - B "HyperText Markup Language"
+
+3 - A "Cascading Style Sheets"
+
+4 - (1) HTML	(3) interatividade   
+    (2) CSS	(1) conteúdo
+    (3) JS	(2) estilo
+
+	D 3-1-2
+
+5 - B <meta>
+
+6 - D valor
+
+7 - A seletor
+
+8 - C color
+
+9 - D <!DOCTYPE html>
+
+10 - B <meta charset="UTF-8">
+
+=======================================================
+
+HARMONIZAÇÃO DE CORES
+
+Primárias - Vermelho, Amarelo, Azul
+
+Secundárias - Laranja, Violeta, Verde
+
+Terciárias - Amarelo-esverdeado, Amarelo-alaranjado, Vermelho-alaranjado, Vermelho-arroxeado, Azul-arroxeado, Azul-esverdeado
+
+Cores Frias - Azul, Violeta, Azul-arroxeado, Azul-esverdeado, Verde, Amarelo-esverdeado
+
+Cores Quentes - Amarelo, Amarelo-alaranjado, Laranja, Vermelho-alaranjado, Vermelho, Vermelho-arroxeado
+
+
+*Paleta tem entre 3 a 5 cores, média de 4 (Esquecer do preto e branco pois terá sempre)*
+
+Cores complementares - são aquelas que mais tem contraste entre si. Exemplo: Violeta para Amarelo
+
+Cores Análogas - não tem tanto contraste mas são perceptíveis. Pega as cores vizinhas da escolhida Exemplo: Violeta: cores próximas Vermelho-arroxeado e Azul-arroxeado
+
+Cores Análogas e uma complementar - Faz uma harmonia e contrasta. Exemplo: Violeta com suas vizinhas e o amarelo como complementar
+
+Cores Análogas Relacionadas - Duas cores vizinhas como principais, pula uma cor no círculo e pega a cor que é próxima mas dá um contraste. Exemplo: Amarelo e Amarelo-alaranjado com Laranja
+
+Cores Intercaladas - Parecida a Relacionadas porém pega uma cor como referência e vai intercalando no círculo cromático. Exemplo: Amarelo, Laranja e Vermelho
+
+Cores Triádicas - Pega uma cor e pula três no círculo
+
+Cores em Quadrado - Forma um quadrado, escolhendo quatro cores pulando de dois em dois no círculo. Exemplo: Amarelo, Vermelho-alaranjado, Violeta e Azul-esverdeado
+
+Cores Tetrádicas - Escolhe uma cor e sua complementar, depois escolhe outra e sua complementar
+
+Monocromia - Trabalha apenas com uma cor, modificando saturação e luminosidade
+
+==================================================
+
+Adobe color
+Palleton
+Collors
+
+Colorzilla
+
+==============================================
+
+Letra "x" é o ponto de partida para construções de fontes (altura x)
+
+================================================================
+
+medidas absolutas: cm, mm, in, px, pt, pc
+
+medidas relativas: em, ex, rem, vw, vh, %
+
+
+fonte usar px ou em
+
+shorthand font: font-style -> weight -> size -> family
+
+===============================================================================
+
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-element
+>  = children
+
+================================================================================
+
+Tipos de caixa
+
+box-level: cria um espaço, pula uma linha. Exemplo: <DIV>
+
+inline-level: cria um espaço, continua na mesma linha e fica nela sem pular. Exemplo: <SPAN>
+
+===============================================================================================
+
+Sombra
+
+box-shadow: horizontal, vertical, embaçamento, espalhamento e cor
+             
+
+

@@ -1,0 +1,21 @@
+li.open {
+    list-style: circle;
+}
+
+li.closed {
+    list-style: square;
+}
+
+ol.info {
+    list-style: upper-latin;
+}
+
+body {
+    counter-reset: mynum;
+}
+
+p.numbered:before {
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+}

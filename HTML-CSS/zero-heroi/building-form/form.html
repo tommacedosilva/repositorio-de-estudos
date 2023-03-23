@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Web</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Construindo um formulário básico</h1>
+
+    <div class="container">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nome</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="nome" placeholder="Seu nome...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Sobrenome</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="sobrenome" placeholder="Seu sobrenome...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">País</label>
+                </div>
+                <div class="col-75">
+                    <select name="country" id="country">
+                        <option value="brasil">Brasil</option>
+                        <option value="irlanda">Irlanda</option>
+                        <option value="canada">Canadá</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Assunto</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="subject" id="subject" placeholder="Escreva algo..." style="height: 200px;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

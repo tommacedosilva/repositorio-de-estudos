@@ -1,0 +1,13 @@
+h3.numbered {
+    counter-reset: mynum;
+}
+
+p.numbered:before {
+    content: counter(mynum) ": ";
+    counter-increment: mynum;
+    font-weight: bold;
+}
+
+li {
+    list-style: upper-roman;
+}

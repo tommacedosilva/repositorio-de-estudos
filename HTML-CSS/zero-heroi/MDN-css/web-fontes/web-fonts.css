@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'asap';
+    src: url('fontes/Asap-Regular.otf'),
+        url('fontes/Asap-Medium.otf'),
+        url('fontes/Asap-MediumItalic.otf'),
+        url('fontes/Asap-Italic.otf'),
+        url('fontes/Asap-BoldItalic.otf'),
+        url('fontes/Asap-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'alef';
+    src: url('fontes/Alef-Regular.ttf'),
+          url('fontes/Alef-Bold.ttf');
+}
+
+/* General setup */
+
+html {
+    font-size: 10px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Typography */
+  
+  h1 {
+    font-size: 3.2rem;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h1, h2 {
+    font-family: 'alef', serif;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    font-family: 'asap', sans-serif;
+  }

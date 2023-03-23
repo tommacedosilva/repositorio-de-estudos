@@ -1,0 +1,43 @@
+html {
+    background-color: gray;
+}
+
+body {
+    width: 950px;
+    margin: auto;
+    margin-top: 90px;
+    background-color: white;
+    height: 500px;
+}
+
+.texto-inicial {
+    font-size: small;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sub-texto {
+    font-size: medium;
+    text-align: left;
+}
+
+button {
+    display: block;
+    width: 500px;
+    height: 60px;
+    margin: 10px;
+}
+
+img {
+    float: right;
+    width: 400px;
+    height: 500px;
+}
+
+.footer-1 {
+    float: left;
+}
+
+.footer-2 {
+    float: right;
+}

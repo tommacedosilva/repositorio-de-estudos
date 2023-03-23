@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens no HTML</title>
+    <style>
+        p {
+            background-image: url("https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- No mesmo diretório -->
+    <img src="dinossauro.jpg">
+
+    <!-- Num subdiretório -->
+    <img src="images/dinossauro.jpg">
+
+    <!-- URL absoluto -->
+    <img src="https://www.example.com/images/dinossauro.jpg" alt="A cabeça e o torso de um esqueleto de dinossauro; tem uma cabeça larga com dentes longos e afiados" width="400" 
+    height="341"
+    title="Um T-Rex em exibição no Museu da Universidade de Manchester">
+
+    <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" 
+    alt="A cabeça e o torso de um esqueleto de dinossauro; tem uma cabeça larga com dentes longos e afiados"
+    width="300"
+    height="171"
+    title="Um T-Rex em exibição no Museu da Universidade de Manchester">
+
+    <!-- elementos semânticos -->
+    <figure>
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" alt="A cabeça e o torso de um esqueleto de dinossauro; tem uma cabeça larga com dentes longos e afiados"
+        width="300"
+        height="171">
+
+        <figcaption>Um T-Rex em exibição no Museu da Universidade de Manchester</figcaption>
+    </figure>
+
+    <!-- imagens de fundo com CSS -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit eligendi perferendis aspernatur alias quae tempore. Sequi delectus aliquid dolorem non ab necessitatibus, eaque atque temporibus, sapiente doloremque saepe doloribus.</p>
+</body>
+</html>

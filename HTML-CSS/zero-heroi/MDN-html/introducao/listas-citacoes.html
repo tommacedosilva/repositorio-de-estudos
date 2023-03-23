@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação avançada</title>
+</head>
+<body>
+    <h1>Listas e Citações</h1>
+
+    <dl>
+        <dt>
+            solilóquio
+        </dt>
+        <dd>
+            No drama, onde um personagem fala a si mesmo, representando seus pensamentos ou sentimentos internos e no processo, transmitindo-os ao público (mas não a outros personagens).
+        </dd>
+        <dt>
+            monólogo
+        </dt>
+        <dd>
+            No drama, onde um personagem fala seus pensamentos em voz alta para compartilhá-los com o público e com outros personagens presentes.
+        </dd>
+        <dt>
+            aparte
+        </dt>
+        <dd>
+            No drama, onde um personagem compartilha um comentário apenas com o público para efeito humorístico ou dramático. Isso geralmente é um sentimento, pensamento ou parte de informação de fundo adicional.
+        </dd>
+    </dl>
+
+    <h1>Blockquote</h1>
+
+    <blockquote cite="/en-US/docs/Web/HTML/Element/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation.
+        </p>
+    </blockquote>
+
+    <h1>Cotações em linha</h1>
+
+    <p>
+        The quote element - <code>&lt;q&gt;</code> - is <q>intended for short quotations that don´t require paragraph breaks.</q>
+    </p>
+
+    <h1>Citações</h1>
+
+    <p>
+        <a href="/en-US/docs/Web/HTML/Element/blockquote">According to the <cite>MDN blockquote page</cite></a>:
+    </p>
+
+    <blockquote cite="/en-US/docs/Web/HTML/Element/blockquote">
+        <p>
+            The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation.
+        </p>
+    </blockquote>
+
+    <p>
+        The quote element - <code>&lt;q&gt;</code> - is <q cite="/en-US/docs/Web/HTML/Element/q">intended for short quotations that don´t require paragraph breaks.</q> -- <a href="/en-US/docs/Web/HTML/Element/q"><cite>MDN q page</cite></a>.
+    </p>
+
+    <h1>Abreviações</h1>
+    
+    <p>
+        <abbr title="National Aeronautics and Space Administration">NASA</abbr> sure does some exciting work.
+    </p>
+
+    <p>
+        Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.
+    </p>
+
+    <p>
+        Acho que o <abbr title="Reverendo">Rev.</abbr> Green fez isso na cozinha com a motosserra.
+    </p>
+
+    <h1>
+        Detalhes de contato
+    </h1>
+
+    <address>
+        <p>
+            Chris Mills, Manchester, The Grim North, UK
+        </p>
+    </address>
+
+    <address>
+        <p>
+            Page written by Chris Mills.
+        </p>
+    </address>
+
+    <h1>
+        Sobrescrito e subscrito
+    </h1>
+
+    <p>
+        My birthday is on the 25<sup>th</sup> of May 2001.
+    </p>
+    <p>
+        Caffeine´s chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub><sub>0</sub><sub>2</sub>.
+    </p>
+    <p>
+        If x<sup>2</sup> is 9, x must equal 3 or -3.
+    </p>
+
+    <h1>
+        Representando códigos
+    </h1>
+
+    <pre><code>var para = document.querySelector('p');
+        
+    para.onclick = function() {
+        alert('Owww, stop poking me!')
+    }</code></pre>
+
+    <p>
+        You shouldn´t use presentational elements like <code>&lt;font&gt;</code>
+    </p>
+
+    <p>
+        In the above JavaScript example, <var>para</var> represents a paragraph element.
+    </p>
+
+    <p>
+        Select all the text with <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>A</kbd>.
+    </p>
+
+    <pre>$ <kbd>ping mozilla.org</kbd>
+    <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+    64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+
+    <h1>
+        Marcando horários e datas
+    </h1>
+
+    <time datetime="2016-01-20">
+        20 January 2016
+    </time>
+
+    <br><br>
+
+    <!-- Data simples padrão -->
+    <time datetime="2016-01-20">20 January 2016</time>
+    <br>
+    <!-- Apenas ano e mês -->
+    <time datetime="2016-01">January 2016</time>
+    <br>
+    <!-- Just month and day -->
+    <time datetime="01-20">20 January</time>
+    <br>
+    <!-- Apenas tempo, horas e minutos -->
+    <time datetime="19:30">19:30</time>
+    <br>
+    <!-- Você pode fazer segundos e milissegundos também! -->
+    <time datetime="19:30:01.856">19:30:01.856</time>
+    <br>
+    <!-- Data e hora -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+    <br>
+    <!-- Data e hora com compensação de fuso horário -->
+    <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+    <br>
+    <!-- Chamando um número de semana específico -->
+    <time datetime="2016-W04">The fourth week of 2016</time>
+
+</body>
+</html>

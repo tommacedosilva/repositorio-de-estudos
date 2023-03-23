@@ -1,0 +1,81 @@
+h1 {
+    color: aquamarine;
+}
+
+a:link {
+    color: transparent;
+}
+
+.manythings {
+    background-color: beige;
+}
+
+#onething {
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box p {
+    align-items: center;
+}
+
+.box p:first-child {
+    text-align: right;
+}
+
+h1, h2, .intro {
+    display: flex;
+}
+
+.special {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+.outer {
+    border: 5px solid black;
+}
+
+.boxes {
+    padding: 10px;
+    width: calc(90% - 30px);
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.box2 {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: rotate(0.8turn);
+}
+
+body {
+    background-color: pink;
+}
+
+@media (min-width: 30em) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Comentando no CSS */
+
+@import 'styles2.css';
+
+.exemplo-abreviação {
+    padding: 10px 15px 15px 5px; 
+    /* top, right, bottom, left */
+    
+    background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+    /* color, image, position, repeat, scroll */
+}

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section.columns {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+section > div {
+}
+
+img {
+    margin: 20px 0 20px 30px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    margin-left: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 30px;
+    padding-right: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+a {
+    margin: 0 auto;
+}
+
+a.btn {
+    text-decoration: none;
+    width: 50%;
+    height: 5em;
+    border-radius: 500px;
+    color: hsl(0, 0%, 95%);
+    border: 3px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+div.col-1 {
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+div.col-2 {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+div.col-3 {
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.267);
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+    section.columns {
+        flex-direction: column;
+    }
+}

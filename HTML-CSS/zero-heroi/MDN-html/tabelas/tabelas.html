@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="tabelas.css">
+</head>
+<body>
+    <h1>Template tabelas</h1>
+
+    <h2>Tabela simples</h2>
+    <table>
+        <tr>
+            <td>Olá, sou a primeira célula</td>
+            <td>Sou a segunda célula</td>
+            <td>Sou a terceira célula</td>
+            <td>Sou a quarta célula</td>
+        </tr>
+        <tr>
+            <td>Segunda linha, primeira célula</td>
+            <td>Célula 2</td>
+            <td>Célula 3</td>
+            <td>Célula 4</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com cabeçalho</h2>
+    <table>
+        <tr>
+            <td>&nbsp;</td>
+            <th scope="col">Knocky</th>
+            <th scope="col">Flor</th>
+            <th scope="col">Ella</th>
+            <th scope="col">Juan</th>
+        </tr>
+        <tr>
+            <th scope="row">Breed</th>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+            <th scope="row">Age</th>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">Owner</th>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <th scope="row">Eating Habits</th>
+            <td>Eats everyone´s leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+
+    <h2>Tabela distribuídas por múltiplas filas e colunas</h2>
+    <table>
+        <tr>
+            <th colspan="2">Animals</th>
+        </tr>
+        <tr>
+            <th colspan="2">Hippopotamus</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Horse</th>
+            <td>Mare</td>
+        </tr>
+        <tr>
+            <td>Stallion</td>
+        </tr>
+        <tr>
+            <th colspan="2">Crocodile</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Chicken</th>
+            <td>Cock</td>
+        </tr>
+        <tr>
+            <td>Rooster</td>
+        </tr>
+    </table>
+
+    <h2>Estilização comum para colunas</h2>
+    <table>
+        <tr>
+            <th>Data 1</th>
+            <th style="background-color: yellow;">Data 2</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td style="background-color: yellow;">Orange</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td style="background-color: yellow;">Jazz</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <colgroup>
+            <col>
+            <col style="background-color: yellow" span="2">
+        </colgroup>
+        <tr>
+            <th>Data 1</th>
+            <th>Data 2</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td>Orange</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+        </tr>
+    </table>
+
+    <h2>Tabela de períodos</h2>
+    <table>
+        <caption>Tabela períodos das aulas</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color: #97DB9A;">
+            <col style="width: 42px;">
+            <col style="background-color: #97DB9A;">
+            <col style="background-color: #DCC48E; border: 4px solid #C1437A;">
+            <col style="background-color: none; width: 42px;">
+            <col style="background-color: none; width: 42px;">
+        </colgroup>
+        <tr>
+          <td>&nbsp;</td>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr>
+          <th>1st period</th>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>2nd period</th>
+          <td>English</td>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>3rd period</th>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>4th period</th>
+          <td>&nbsp;</td>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>English</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+
+    <h2>Tabela com legenda</h2>
+    <table>
+        <caption>Dinosaurs in the Jurassic period</caption>
+
+        ...
+    </table>
+
+    <h2>Estrutura com thead, tfoot e tbody</h2>
+    <table>
+        <caption>How I chose to spend my money</caption>
+        <thead>
+            <tr>
+                <th>Purchase</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Evaluation</th>
+                <th>Cost (€)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">SUM</td>
+                <td>118</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Hairdresser</td>
+                <td>12/09</td>
+                <td>Great idea</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Lasagna</td>
+                <td>Restaurant</td>
+                <td>12/09</td>
+                <td>Regrets</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Shoes</td>
+                <td>Shoeshop</td>
+                <td>13/09</td>
+                <td>Big regrets</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Toothpaste</td>
+                <td>Supermarket</td>
+                <td>13/09</td>
+                <td>Good</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Incorporar tabelas</h2>
+    <table id="table1">
+        <tr>
+            <th>title1</th>
+            <th>title2</th>
+            <th>title3</th>
+        </tr>
+        <tr>
+            <td id="nested">
+                <table id="table2">
+                    <tr>
+                        <td>cell1</td>
+                        <td>cell2</td>
+                        <td>cell3</td>
+                    </tr>
+                </table>
+            </td>
+            <td>cell2</td>
+            <td>cell3</td>
+        </tr>
+        <tr>
+            <td>cell4</td>
+            <td>cell5</td>
+            <td>cell6</td>
+        </tr>
+    </table>
+
+    <h2>Atribuir scope</h2>
+    <thead>
+        <tr>
+            <th scope="col">Purchase</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date</th>
+            <th scope="col">Evaluation</th>
+            <th scope="col">Cost (£)</th>
+        </tr>
+    </thead>
+    <tr>
+        <th scope="row">Haircut</th>
+        <td>Hairdresser</td>
+        <td>12/09</td>
+        <td>Great idea</td>
+        <td>30</td>
+    </tr>
+    <thead>
+        <tr>
+            <th id="purchase">Purchase</th>
+            <th id="location">Location</th>
+            <th id="date">Date</th>
+            <th id="evaluation">Evaluation</th>
+            <th id="cost">Cost (£)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="haircut">Haircut</th>
+            <td headers="location haircut">Hairdresser</td>
+            <td headers="date haircut">12/09</td>
+            <td headers="evaluation haircut">Great Idea</td>
+            <td headers="cost haircut">30</td>
+        </tr>
+    </tbody>
+</body>
+</html>

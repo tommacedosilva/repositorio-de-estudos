@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático posicionamento</title>
+    <link rel="stylesheet" href="position-pratica.css">
+</head>
+<body>
+    <section class="fake-content">
+        <h1>Fake content</h1>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+        <p>This is fake content. Your main web page contents would probably go here.</p>
+      </section>
+    <section class="info-box">
+        <ul>
+            <li><a href="#" class="active">Tab 1</a></li>
+            <li><a href="#">Tab 2</a></li>
+            <li><a href="#">Tab 3</a></li>
+        </ul>
+        <div class="panels">
+            <article class="active-panel">
+                <h2>The first tab</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, omnis unde corporis, architecto dolor impedit esse iusto dolorum atque nostrum libero. Ullam nemo quia distinctio voluptate veritatis ut exercitationem fugiat error earum, voluptas assumenda laborum quos autem at laboriosam facilis incidunt non vero nostrum explicabo tempore atque, numquam deserunt in.</p>
+            </article>
+            <article>
+                <h2>The second tab</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, omnis unde corporis, architecto dolor impedit esse iusto dolorum atque nostrum libero.</p>
+            </article>
+            <article>
+                <h2>The third tab</h2>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, omnis unde corporis, architecto dolor impedit esse iusto dolorum atque nostrum libero.</p>
+
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga!</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem, ipsum.</li>
+                </ol>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        var tabs = document.querySelectorAll('.info-box li a');
+        var panels = document.querySelectorAll('.info-box article');
+
+        for (i = 0; i < tabs.length; i++) {
+            var tab = tabs[i];
+            setTabHandler(tab, i);
+        }
+
+        function setTabHandler(tab, tabPos) {
+            tab.onclick = function() {
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].className = '';
+                }
+
+                tab.className = 'active';
+
+                for(i = 0; i < panels.length; i++) {
+                    panels[i].className = '';
+                }
+
+                panels[tabPos].className = 'active-panel';
+            }
+        }
+    </script>
+</body>
+</html>
