@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando as habilidades</title>
+</head>
+<body>
+    <script>
+        // Teste 1
+        var meuNome;
+        meuNome = 'Tom';
+        var minhaIdade = 33;
+
+        section.innerHTML = ' ';
+        const para1 = document.createElement('p');
+        para1.textContent = meuNome;
+        const para2 = document.createElement('p');
+        para2.textContent = minhaIdade;
+        section.appendChild(para1);
+        section.appendChild(para2);
+
+        // Teste 2
+        let myName = 'Tom';
+
+        section.innerHTML = ' ';
+        const para = document.createElement('p');
+        para.textContent = myName;
+        section.appendChild(para);
+
+        // Teste 3
+        const myName = 'Chris';
+
+        let myAge = '42';
+
+        section.innerHTML = ' ';
+        const para1 = document.createElement('p');
+        const para2 = document.createElement('p');
+        para1.textContent = myName;
+        para2.textContent = `In 20 years, I will be ${Number(myAge) + 20}`;
+        section.appendChild(para1);
+        section.appendChild(para2);
+    </script>
+</body>
+</html>
