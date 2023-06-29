@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Semnéfilos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Formulário Semnéfilo</h1>
+            <p id="description">Agradecemos por nos ajudar a melhorar o nosso podcast de cinema!</p>
+        </header>
+        <form action="" method="post" id="survey-form">
+            <label for="name-label">Digite seu nome<input type="text" id="name-label" placeholder="Digite seu nome" required /></label>
+            <label for="email-label">Digite seu email<input type="email" id="email-label" placeholder="Digite seu email" required /></label>
+            <label for="number-label">Digite sua idade(opcional)<input type="number-label" id="number" placeholder="Idade" min="18" max="120" /></label>
+
+            <label for="dropdown">Onde você ouviu falar da gente?
+                <select name="como-nos-conheceu" id="dropdown">
+                    <option value="">(escolha uma opção)</option>
+                    <option value="1">Recomendação amiges</option>
+                    <option value="2">Redes sociais</option>
+                    <option value="3">Recomendação do seu agregador favorito</option>
+                    <option value="4">Outras</option>
+                </select>
+            </label>
+            <label for="video"><input type="radio" name="forma-consumo" id="video" value="video" /> Gosto de vídeo</label>
+            <label for="audio"><input type="radio" name="forma-consumo" id="audio" value="audio" /> Prefiro no áudio</label>
+            <p>
+                O que você mais gosta de ouvir sobre cinema?
+                <span>(Clique em todas as opções que se aplicar)</span>
+            </p>
+            <label>
+                <input type="checkbox" id="lancamento" name="prefer" value="filme-lancamento"> Papo sobre um lançamento
+            </label>
+            <label>
+                <input type="checkbox" id="classicos" name="prefer" value="filme-classico"> Revisitando filmes clássicos
+            </label>
+            <label>
+                <input type="checkbox" id="alem" name="prefer" value="filme-alem"> Papo além do filme
+            </label>
+            <label>
+                <input type="checkbox" id="recomenda" name="prefer" value="filme-recomenda"> Recomendação de filmes
+            </label>
+            <label>
+                <input type="checkbox" id="funcoes" name="prefer" value="filme-funcoes"> Entendendo sobre as funções no cinema
+            </label>
+            <label>
+                <input type="checkbox" id="biografias" name="prefer" value="filme-cinebiografias"> Cinebiografias
+            </label>
+            <label>
+                <input type="checkbox" id="industria" name="prefer" value="filme-industria"> Falar sobre a indústria de cinema
+            </label>
+            <label for="comentarios">Tem comentários ou sugestões, coloca aqui:
+                <textarea name="comentarios" id="comentarios" cols="30" rows="3" placeholder="Eu queria ver no Semnéfilos..."></textarea>
+            </label>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
