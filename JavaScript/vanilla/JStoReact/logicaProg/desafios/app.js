@@ -1,3 +1,5 @@
+/* Desafio parte 1 */
+
 let titulo = document.querySelector('h1')
 titulo.innerHTML = "Hora do Desafio"
 
@@ -20,3 +22,53 @@ function clicaSoma() {
     let soma = n1 + n2
     alert(soma) 
 }
+
+
+/* Desafio parte 2 */
+
+function hello() {
+    console.log('Olá, mundo!');
+}
+
+hello()
+
+function seuNome() {
+    let nome = prompt('Digite seu nome:')
+    console.log(`Olá, ${nome}!`);
+}
+
+seuNome()
+
+function calculaDobro(numero) {
+    return numero * 2
+}
+
+let resultadoDoDobro = calculaDobro(5)
+console.log(resultadoDoDobro);
+
+
+function calculaMedia(a, b, c) {
+    return (a + b + c) / 3
+}
+
+let media = calculaMedia(8, 9, 10)
+console.log(media);
+
+
+function encontraMaior(a, b) {
+    return a > b ? a : b
+}
+
+let maiorNumero = encontraMaior(19, 8)
+console.log(maiorNumero);
+
+
+function multiplicaNum(numero) {
+    return numero * numero
+}
+
+let resultadoMultiplicado = multiplicaNum(10)
+console.log(resultadoMultiplicado);
+
+
+/* Desafio parte 3 */
