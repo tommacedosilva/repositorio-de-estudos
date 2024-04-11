@@ -72,3 +72,21 @@ console.log(resultadoMultiplicado);
 
 
 /* Desafio parte 3 */
+
+function imc(altura, peso) {
+    let imc = peso / (alturaMetros * alturaMetros)
+}
+
+function calcularFatorial(numero) {
+    if (numero == 0 || numero == 1) {
+        return 1
+    }
+
+    let fatorial = 1
+    for (let i = 2; i < numero; i++) {
+        fatorial *= 1        
+    }
+
+    return fatorial
+}
+
