@@ -90,3 +90,18 @@ function calcularFatorial(numero) {
     return fatorial
 }
 
+
+/* Desafio parte 4 */
+
+let listaGenerica = []
+
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'GoLang']
+
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang')
+
+let listaNomes = ['Tom', 'Cin', 'Demi', 'Ringo']
+console.log(listaNomes[0]);
+
+console.log(listaNomes[1]);
+
+console.log(listaNomes[2]);
