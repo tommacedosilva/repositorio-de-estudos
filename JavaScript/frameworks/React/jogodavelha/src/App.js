@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
-function App() {
+function MeuComponente({numCliques, handleClick}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <button onClick={handleClick}>
+      Clique aqui! Já clicou {numCliques} vezes
+    </button>
+  )
+}
+function MeuPainel() {
+  const [numCliques, setNumCliques] = useState(0);
+  function handleClick() {
+    setNumCliques(numCliques + 1)
+    console.log('Oi, isto é uma mensagem no console.')
+  }
+  
+  return (
+    <>
+      <MeuComponente numCliques={numCliques} handleClick={handleClick} />
+      <MeuComponente numCliques={numCliques} handleClick={handleClick} />
+      <MeuComponente numCliques={numCliques} handleClick={handleClick} />
+      <MeuComponente numCliques={numCliques} handleClick={handleClick} />
+    </>
+  )
 }
 
-export default App;
+export default MeuPainel;
