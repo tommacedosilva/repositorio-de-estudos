@@ -1,35 +1,89 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import axios from "axios"
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+
+const satIcon = new L.Icon({
+    iconUrl: 'satellite.png',
+    iconSize: [25,25],
+    iconAnchor: [12,12],
+    popupAnchor: [0, -12]
+})
 
 function StarlinkList() {
     const [starlinks, setStarlinks] = useState([])
+    const [page, setPage] = useState([1])
+    const [hasNextPage, setHasNextPage] = useState([true])
+    const [total, setTotal] = useState(0)
+    const inicializacao = useRef(true)
 
     useEffect(() => {
-        const fetchStarlinks = async () => {
+        if (inicializacao.current) {
+            fetchStarlinks(1)
+            inicializacao.current = false 
+        }
+    }, [])
+
+        const fetchStarlinks = async (page) => {
             try {
                 const response = await axios.post('https://api.spacexdata.com/v4/starlink/query', {
                     "query": {},
-                    "options": { limit: 100 }
+                    "options": { page: page, limit: 100 }
                 })
                 //console.log(response.data.docs)
-                setStarlinks(response.data.docs)
+                //setStarlinks(response.data.docs)
+                setStarlinks((docsAtuais) => [...docsAtuais, ...response.data.docs])
             } catch (error) {
                 console.error('Erro ao obter dados da api da starlink', error)
             }
         }
-        fetchStarlinks()
-    }, [])
+
+    const loadMore = () => {
+        if (hasNextPage) {
+
+            const nextPage = page + 1
+            setPage(nextPage)
+            fetchStarlinks(nextPage)
+        }
+    }
 
 
 
     return (
         <div>
             <h1>Satélites da Starlink</h1>
-            <ul>
-                {starlinks.map((sat) => (
-                    <li key={sat.id}>{sat.spaceTrack.OBJECT_NAME}</li>
+            <MapContainer center={[0,0]} zoom={2} style={{height: '60vh', width: '100%'}}>
+                <TileLayer 
+                    url="https://{s}.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                {starlinks
+                    .filter((sat) => sat.latitude != null && sat.longitude != null)
+                    .map((sat) => (
+                        <Marker key={sat.id} position={[sat.latitude, sat.longitude]}>
+                            <Popup>
+                                <div>
+                                    <h1>{sat.spaceTrack.OBJECT_NAME}</h1>
+                                    <p>Latitude: {sat.latitude}</p>
+                                    <p>Longitude: {sat.longitude}</p>
+                                    <p>Velocidade:{sat.velocity_kms}</p>
+                                    <p>Altura:{sat.height_km}</p>
+                                    <p>Data de lançamento:{sat.spaceTrack.LAUNCH_DATE}</p>
+                                </div>
+                            </Popup>
+                        </Marker>
                 ))}
-            </ul>
+            </MapContainer>
+
+            <div style={{textAlign: 'center', margin:'20px 0'}}>
+                { hasNextPage &&
+                    <button onClick={loadMore}>
+                        Carregar Mais
+                    </button>
+                }
+                <p>{starlinks.length} satélites carregados de um Total de {total}</p>
+            </div>
+  
         </div>
     )
 }
