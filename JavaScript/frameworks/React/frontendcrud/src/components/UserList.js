@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import api from "../api";
+import UserForm from "./UserForm";
 
 const UserList = () => {
 
     const [users, setUsers] = useState([])
+    const [userToEdit, setUserToEdit] = useState(null)
 
     const fetchUsers = async () => {
         try {
@@ -26,7 +28,7 @@ const UserList = () => {
         // usando o método DELETE
         try {
             await api.delete(`/users/${id}`)
-            setUsers(users.filter(user=> user.id != id))
+            setUsers(users.filter(user=> user.id !== id))
 
         } catch (error) {
             console.log('Erro ao excluir usuário:', error);
@@ -34,13 +36,19 @@ const UserList = () => {
         console.log(id);
     }
 
+    const handleEdit = async (user) => {
+        setUserToEdit(user)
+    }
+
     return (
         <>
             <h1>Lista de Usuários</h1>
+            <UserForm fetchUsers={fetchUsers} userToEdit={userToEdit} setUserToEdit={setUserToEdit} />
             <ul>
                 {users.map(user => (
                     <li key={user.id}>
                         {user.name} - {user.email}
+                        <button onClick={() => handleEdit(user)}>Editar</button>
                         <button onClick={() => handleDelete(user.id)}>Excluir</button>
                     </li>
                 ))}
