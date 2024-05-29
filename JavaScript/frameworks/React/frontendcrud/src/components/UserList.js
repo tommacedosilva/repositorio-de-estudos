@@ -21,12 +21,28 @@ const UserList = () => {
         fetchUsers()
     }, [])
 
+    const handleDelete = async (id) => {
+        // TODO: chamar a API enviando o ID
+        // usando o método DELETE
+        try {
+            await api.delete(`/users/${id}`)
+            setUsers(users.filter(user=> user.id != id))
+
+        } catch (error) {
+            console.log('Erro ao excluir usuário:', error);
+        }
+        console.log(id);
+    }
+
     return (
         <>
             <h1>Lista de Usuários</h1>
             <ul>
                 {users.map(user => (
-                    <li key={user.id}>{user.name} - {user.email}</li>
+                    <li key={user.id}>
+                        {user.name} - {user.email}
+                        <button onClick={() => handleDelete(user.id)}>Excluir</button>
+                    </li>
                 ))}
 
             </ul>
