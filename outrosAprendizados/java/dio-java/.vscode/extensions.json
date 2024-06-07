@@ -6,6 +6,8 @@
         "vscjava.vscode-maven",
         "vscjava.vscode-java-dependency",
         "visualstudioexpteam.vscodeintellicode",
-        "vscjava.vscode-java-pack"
+        "vscjava.vscode-java-pack",
+        "pivotal.vscode-spring-boot",
+        "vscjava.vscode-maven"
     ]
 }
