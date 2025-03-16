@@ -1,0 +1,24 @@
+uuid: 1ef3d005-8e54-48b7-8f36-f93bf00be6c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descricao
+    - filter.format.basic_html
+    - node.type.tarefa
+  module:
+    - text
+id: node.tarefa.field_descricao
+field_name: field_descricao
+entity_type: node
+bundle: tarefa
+label: Descrição
+description: 'Adiciona tarefa do projeto.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

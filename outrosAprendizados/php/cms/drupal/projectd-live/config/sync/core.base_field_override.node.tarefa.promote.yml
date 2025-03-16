@@ -1,0 +1,22 @@
+uuid: aee92cd9-6005-4a77-88ac-f2070df2e569
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tarefa
+id: node.tarefa.promote
+field_name: promote
+entity_type: node
+bundle: tarefa
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

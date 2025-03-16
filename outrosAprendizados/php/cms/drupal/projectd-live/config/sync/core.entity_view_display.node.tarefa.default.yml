@@ -1,0 +1,28 @@
+uuid: 21d490e4-4c4b-4626-918d-c0325ed897a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tarefa.field_descricao
+    - node.type.tarefa
+  module:
+    - text
+    - user
+id: node.tarefa.default
+targetEntityType: node
+bundle: tarefa
+mode: default
+content:
+  field_descricao:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
