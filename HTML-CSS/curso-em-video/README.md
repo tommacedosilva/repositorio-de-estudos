@@ -23,5 +23,15 @@
 
 grid container  
 grid item
-grid track > row track ou line track
+grid track > row track ou column track
 grid lines
+
+display
+grid-template-columns
+grid-template-rows
+gap
+
+align-items
+align-content
+justify-items
+justify-content
