@@ -19,3 +19,9 @@
 - grip-gap
     * cria um espaço padrão entre os itens
     * exemplo: grid-gap: 20px;
+
+
+grid container  
+grid item
+grid track > row track ou line track
+grid lines
