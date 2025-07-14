@@ -1,0 +1,27 @@
+
+body {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #4776AA;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.1;
+}
+
+h2 {
+    color: #F28C28;
+    text-align: start;
+}
+
+footer {
+    background-color: #22466C;
+    color: #fff;
+}
