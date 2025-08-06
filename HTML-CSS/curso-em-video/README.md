@@ -13,7 +13,7 @@
 - grid lines
 - Numeração das grid lines são positivas e negativas
 
-### Propriedades do container do Grid Layout
+### Propriedades do container com Grid Layout
 
 - display
     * coloquei display: grid; num componente vira grid container e tudo dentro dele vira grid-items
@@ -88,3 +88,29 @@
 
 - fraction: dá um controle maior das áreas, invés do auto que limita todas com mesmo tamanho.
     * grid-template-columns: 1fr, 2fr, 1fr; (um layout de 1500px divide em 3 mas em 4 frações, sendo a do meio tendo dois pedaços de 375px e a primeira e última com um pedaço).
+
+- grid-auto-flow: propriedade que direciona áreas que quebram no grid quando é organizado um tamanho certo e tenha mais áreas
+
+### Propriedades dos itens com Grid Layout
+Propriedades onde defino onde vai cada área, sabendo onde começa e termina a linha e a coluna
+
+- grid-row-start: linha de ínicio
+
+- grid-row-end: linha de fim
+
+- grid-column-start: coluna de início
+
+- grid-column-end: coluna de fim
+
+- span: as áreas se expande por uma quantidade declarada.
+    * exemplo => grid-row-end: span 3; | grid-column-end: span 2;
+    * no exemplo a linha expandiu 3 linhas, tipo da 1 até a 4 e a coluna expandiu 2 colunas, tipo da 1 até a 3
+
+- grid-row: simplifica grid-row-start e end
+    * exemplo => grid-row: 1 / 4;
+
+- grid-column: simplifica grid-column-start e end
+    * exemplo => grid-column: 1 / 3;
+
+- grid-area: simplifica as 4 propriedades de row e column. Na ordem: row-start, column-start, row-end, column-end
+    * exemplo => grid-area: 1 / 1 / 4 / 3;
