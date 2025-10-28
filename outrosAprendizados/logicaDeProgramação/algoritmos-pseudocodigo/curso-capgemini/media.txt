@@ -1,0 +1,31 @@
+// Entrada de dados:
+    primeiraNota
+    segundaNota
+    terceiraNota
+
+// Processamento
+    Calcular Media    
+
+// Saida
+    Mostrar se foi aprovado ou reprovado
+
+===================================
+Algoritmo:
+
+// Entrada de dados
+Ler primeiraNota
+Ler segundaNota
+Ler terceiraNota
+
+// Processamento
+somaNotas = primeiraNota + segundaNota + terceiraNota
+media = somaNotas / 3
+
+// Saida
+se media >= 7 entao
+    escreva "Aprovado"
+senao 
+    escreva "Reprovado"
+
+
+
